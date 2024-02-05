@@ -1,18 +1,30 @@
 import React, { useEffect, useState } from "react";
 import RestaurantsCart from "./RestaurantsCart";
 import Shimmer from "./Shimmer";
+import { RES_API } from "../Utility/Content";
 
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
+  const [search, setSearch] = useState([]);
+  const [newSearchData, setNewSearchData] = useState([]);
+
+  const searchBar = () => {
+    const searchdata = listOfRestaurant.filter((e) =>
+      e.info.name.toLowerCase().includes(search.toLowerCase())
+    );
+    setNewSearchData(searchdata);
+  };
+  const filteredList = () => {
+    const newdata = listOfRestaurant.filter((res) => res.info.avgRating > 4.5);
+    setListOfRestaurant(newdata);
+  };
 
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
-      "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
-    );
+    const data = await fetch(RES_API);
 
     const json = await data.json();
 
@@ -20,22 +32,26 @@ const Body = () => {
       ?.infoWithStyle?.restaurants;
 
     setListOfRestaurant(resData);
+    setNewSearchData(resData);
+    console.log(resData);
   };
-
-  // if (listOfRestaurant.length == 0) return;
 
   return listOfRestaurant.length == 0 ? (
     <Shimmer />
   ) : (
     <div>
       <div className="filterBtn">
-        <button>Top Rated Restaurant</button>
-        <input type="text" />
-        <button>search</button>
+        <button onClick={filteredList}>Top Rated Restaurant</button>
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button onClick={searchBar}>search</button>
       </div>
       <div className="main-container">
-        {listOfRestaurant.map((res) => {
-          return <RestaurantsCart data={res.info} />;
+        {newSearchData.map((res) => {
+          return <RestaurantsCart key={res.info.id} data={res.info} />;
         })}
       </div>
     </div>
@@ -43,28 +59,3 @@ const Body = () => {
 };
 
 export default Body;
-
-// const Body = () => {
-
-//   useEffect(() => {
-//     fetchData();
-//   }, []);
-//   const fetchData = async () => {
-//     const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
-//     const json = await data.json();
-//     // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
-
-//     const resData = await json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-
-//     console.log(resData)
-
-//   }
-//   return (
-//     <div>
-//       <Filter />
-//       <RestaurantsCart/>
-//     </div>
-//   )
-// }
-
-// export default Body

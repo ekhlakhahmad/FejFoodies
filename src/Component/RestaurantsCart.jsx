@@ -1,4 +1,5 @@
 import React from 'react'
+import { RES_IMG } from '../Utility/Content';
 
 const RestaurantsCart = ({data}) => {
 
@@ -10,23 +11,27 @@ const RestaurantsCart = ({data}) => {
     costForTwo,sla } = data;
 
   return (
-      <div className='card'>
-        <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/"+cloudinaryImageId} alt="" />
-      
-        <h3>{name}</h3>
-        <h4>{avgRating}</h4>
-        <p>{sla.slaString}</p>
-        <ul>
-        {
-          cuisines.map((ele) => {
-            return <li>{ele}</li>
-          })
+    <div className="card">
+      <img
+        src={
+          RES_IMG +
+          cloudinaryImageId
         }
-        </ul>
-        <h5>{areaName}</h5>
-        <h4>{costForTwo}</h4>
+        alt=""
+      />
+
+      <h3>{name}</h3>
+      <h4>{avgRating}</h4>
+      <p>{sla.slaString}</p>
+      <ul>
+        {cuisines.map((ele, index) => {
+          return <li key={index}>{ele}</li>;
+        })}
+      </ul>
+      <h5>{areaName}</h5>
+      <h4>{costForTwo}</h4>
     </div>
-  )
+  );
 }
 
 export default RestaurantsCart

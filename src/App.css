@@ -33,6 +33,7 @@ nav ul li:hover{
     cursor: pointer;
 }
 nav ul button{
+    width: 60px;
     padding: 5px 10px;
     border-radius: 3px;
     border: none;
@@ -74,7 +75,7 @@ nav ul button{
     width: 250px;
     border: 1px solid gray;
     padding: 10px;
-    margin: 15px;
+    margin: 18px;
     border-radius: 10px;
     cursor: pointer;
 }
