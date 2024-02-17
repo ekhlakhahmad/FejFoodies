@@ -25,6 +25,9 @@ nav ul li{
     margin: 10px;
     cursor: pointer;
 }
+nav ul li Link{
+    text-decoration: none;
+}
 nav ul li:hover{
     color: #04a904;
 }
