@@ -11,27 +11,24 @@ const RestaurantsCart = ({data}) => {
     costForTwo,sla } = data;
 
   return (
-    <div className="card">
-      <img
-        src={
-          RES_IMG +
-          cloudinaryImageId
-        }
-        alt=""
-      />
+		<div className="card">
+			<img src={RES_IMG + cloudinaryImageId} alt="" />
 
-      <h3>{name}</h3>
-      <h4>{avgRating}</h4>
-      <p>{sla.slaString}</p>
-      <ul>
-        {cuisines.map((ele, index) => {
-          return <li key={index}>{ele}</li>;
-        })}
-      </ul>
-      <h5>{areaName}</h5>
-      <h4>{costForTwo}</h4>
-    </div>
-  );
+			<div className="nameRate">
+				<h3>{name}</h3>
+				<h4>{avgRating}⭐</h4>
+			</div>
+			<div className="duration">
+				<p>Duration:</p>
+				<p>{sla.slaString}</p>
+			</div>
+			<p>{cuisines.join(", ")}</p>
+			<div className="addprize">
+				<h4>{areaName}</h4>
+				<h4>{costForTwo}</h4>
+			</div>
+		</div>
+	);
 }
 
 export default RestaurantsCart
