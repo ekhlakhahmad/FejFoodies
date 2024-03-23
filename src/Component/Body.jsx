@@ -43,11 +43,12 @@ const Body = () => {
       <div className="filterBtn">
         <button onClick={filteredList}>Top Rated Restaurant</button>
         <input
-          type="text"
+            type="text"
+            placeholder="Enter Restaurant Name"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button onClick={searchBar}>search</button>
+        <button onClick={searchBar}>Search</button>
       </div>
       <div className="main-container">
         {newSearchData.map((res) => {
