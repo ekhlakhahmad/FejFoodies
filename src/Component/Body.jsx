@@ -15,7 +15,7 @@ const Body = () => {
     setNewSearchData(searchdata);
   };
   const filteredList = () => {
-    const newdata = listOfRestaurant.filter((res) => res.info.avgRating > 4.5);
+    const newdata = listOfRestaurant.filter((res) => res.info.avgRating > 4);
     setListOfRestaurant(newdata);
   };
 

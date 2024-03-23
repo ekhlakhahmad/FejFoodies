@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LOGO_URL } from '../Utility/Content'
+import LOGO from '../Assests/FEJ LOGO.png'
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header-sec">
       <div className="logo">
-        <img src={LOGO_URL} alt="logo" />
+        <img src={LOGO} alt="logo" />
       </div>
       <nav>
         <ul>
