@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     list-style-type: none;
+    text-decoration: none;
 }
 .header-sec{
     width: 100%;
@@ -20,14 +21,9 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    list-style-type: none;
-    text-decoration: none;
     padding: 5px;
     margin: 10px;
     cursor: pointer;
-}
-nav ul li Link{
-    text-decoration: none;
 }
 nav ul li:hover{
     color: #04a904;
@@ -67,6 +63,7 @@ nav ul button{
     padding: 5px 10px;
     margin-left: 10px;
     font-size: 16px;
+    outline: none;
 }
 
 /* ************************* Main- container or boyd **************** */
