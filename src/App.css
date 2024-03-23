@@ -72,19 +72,20 @@ nav ul button{
 .main-container{
     display: flex;
     flex-wrap: wrap;
-    margin: 5px 40px;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
 }
 
 .card{
     width: 250px;
     border: 1px solid gray;
     padding: 5px;
-    margin: 18px;
     border-radius: 10px;
     cursor: pointer;
 }
 .card:hover{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .card img{
     width: 100%;
