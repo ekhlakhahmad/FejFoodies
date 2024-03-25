@@ -52,6 +52,7 @@ nav ul button {
 }
 .filterBtn .fiteredBtn{
   border-radius: 100px;
+  height: 40px;
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
@@ -64,7 +65,7 @@ nav ul button {
 
 .inputSec{
   display: flex;
-  height: 50px;
+  height: 40px;
   border-radius: 100px;
   overflow: hidden;
   border: 2px solid #039a63;
@@ -79,7 +80,7 @@ nav ul button {
 .inputSec button{
   border: none;
   outline: none;
-  width: 70px;
+  width: 80px;
   background-color: #039a63;
   color: #fff;
   font-size: 16px;
