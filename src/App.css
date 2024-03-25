@@ -94,6 +94,10 @@ nav ul button{
   border-radius: 10px;
   object-fit: cover;
   object-position: top;
+  transition: all 0.5s ease;
+}
+.card img:hover{
+  transform: scale(1.04);
 }
 .nameRate{
   display: flex;
