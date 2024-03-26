@@ -1,56 +1,59 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-	list-style-type: none;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style-type: none;
+  text-decoration: none;
 }
 .header-sec {
-	width: 100%;
-	height: 75px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 30px;
+  width: 100%;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
 nav ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav ul li {
-	padding: 5px;
-	margin: 10px;
-	cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
 }
 nav ul li:hover {
-	color: #039a63;
+  color: #039a63;
+}
+nav ul li a:hover {
+  color: #039a63;
 }
 .header-sec .logo img {
-	width: 60px;
-	cursor: pointer;
+  width: 60px;
+  cursor: pointer;
 }
 nav ul button {
-	width: 80px;
-	padding: 10px;
-	border: 2px solid #039a63;
-	background-color: #fff;
-	cursor: pointer;
+  width: 80px;
+  padding: 10px;
+  border: 2px solid #039a63;
+  background-color: #fff;
+  cursor: pointer;
   border-radius: 50px;
   font-size: 16px;
 }
 
 /* *********************  Filter Section  *********************/
 
-.filterBtn{
+.filterBtn {
   display: flex;
   justify-content: center;
   gap: 50px;
   padding: 20px;
 }
-.filterBtn .fiteredBtn{
+.filterBtn .fiteredBtn {
   border-radius: 100px;
   height: 40px;
   padding: 10px;
@@ -63,21 +66,21 @@ nav ul button {
 
 /* ************************* SEARCH BAR OR BUTTON **************** */
 
-.inputSec{
+.inputSec {
   display: flex;
   height: 40px;
   border-radius: 100px;
   overflow: hidden;
   border: 2px solid #039a63;
 }
-.inputSec input{
+.inputSec input {
   outline: none;
   border: none;
   width: 500px;
   padding: 10px;
   font-size: 16px;
 }
-.inputSec button{
+.inputSec button {
   border: none;
   outline: none;
   width: 80px;
@@ -86,168 +89,168 @@ nav ul button {
   font-size: 16px;
   cursor: pointer;
 }
-.inputSec button:hover{
+.inputSec button:hover {
   background-color: #028152;
 }
 
 /* ************************* Main- container or body **************** */
 
 .main-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 25px;
-	padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
 }
 
 .card {
-	width: 250px;
-	border: 1px solid gray;
-	padding: 5px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: all ease 0.2s;
+  width: 250px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease 0.2s;
 }
 .card:hover {
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-		rgba(0, 0, 0, 0.22) 0px 15px 12px;
-	transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: scale(1.02);
 }
 .card img {
-	width: 100%;
-	height: 150px;
-	border-radius: 10px;
-	object-fit: cover;
-	object-position: top;
-	transition: all 0.5s ease;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.5s ease;
 }
 .card img:hover {
-	transform: scale(1.04);
+  transform: scale(1.04);
 }
 .nameRate {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
 }
 .nameRate h3 {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .nameRate h4 {
-	padding: 1px 5px;
-	background-color: #04a904;
-	border-radius: 3px;
-	color: #fff;
+  padding: 1px 5px;
+  background-color: #04a904;
+  border-radius: 3px;
+  color: #fff;
 }
 .duration {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
 }
 .addprize {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ****************************** Shimmer components ********************* */
 
 .shimmer-container {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .sprite-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 5px;
-	margin: 30px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 30px 60px;
 }
 
 .sprite-container img {
-	width: 400px;
-	height: 300px;
-	border-radius: 10px;
-	margin: 10px 20px;
-	cursor: pointer;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px 20px;
+  cursor: pointer;
 }
 .image-2 {
-	background-position: -100px 0;
+  background-position: -100px 0;
 }
 
 .image-3 {
-	background-position: -200px 0;
+  background-position: -200px 0;
 }
 
 .image-4 {
-	background-position: -300px 0;
+  background-position: -300px 0;
 }
 
 .image-5 {
-	background-position: -400px 0;
+  background-position: -400px 0;
 }
 
 .image-6 {
-	background-position: -500px 0;
+  background-position: -500px 0;
 }
 
 .image-7 {
-	background-position: -600px 0;
+  background-position: -600px 0;
 }
 
 .image-8 {
-	background-position: -700px 0;
+  background-position: -700px 0;
 }
 
 .image-9 {
-	background-position: -800px 0;
+  background-position: -800px 0;
 }
 
 .image-10 {
-	background-position: -900px 0;
+  background-position: -900px 0;
 }
 
 .image-11 {
-	background-position: -1000px 0;
+  background-position: -1000px 0;
 }
 
 .image-12 {
-	background-position: -1100px 0;
+  background-position: -1100px 0;
 }
 
 .image-13 {
-	background-position: -1200px 0;
+  background-position: -1200px 0;
 }
 
 .image-14 {
-	background-position: -1300px 0;
+  background-position: -1300px 0;
 }
 
 .image-15 {
-	background-position: -1400px 0;
+  background-position: -1400px 0;
 }
 
 .image-16 {
-	background-position: -1500px 0;
+  background-position: -1500px 0;
 }
 
 .image-17 {
-	background-position: -1600px 0;
+  background-position: -1600px 0;
 }
 
 .image-18 {
-	background-position: -1700px 0;
+  background-position: -1700px 0;
 }
 
 .image-19 {
-	background-position: -1800px 0;
+  background-position: -1800px 0;
 }
 
 .image-20 {
-	background-position: -1900px 0;
+  background-position: -1900px 0;
 }
