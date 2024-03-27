@@ -8,12 +8,11 @@
 }
 .header-sec {
   width: 100%;
-  height: 75px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 10px 80px;
 }
 nav ul {
   display: flex;
@@ -24,12 +23,10 @@ nav ul li {
   padding: 5px;
   margin: 10px;
   cursor: pointer;
-}
-nav ul li:hover {
-  color: #039a63;
+  font-size: 16px;
 }
 nav ul li a:hover {
-  color: #039a63;
+  color: #028152;
 }
 .header-sec .logo img {
   width: 60px;
@@ -39,15 +36,28 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+  font-size: 20px;
+}
+.cart{
+  position: relative;
+}
+.cart p{
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  color: #028152;
+}
+.darkMode{
+  cursor: pointer;
 }
 .rightNav button {
   width: 80px;
-  padding: 10px;
-  border: 2px solid #039a63;
+  padding: 5px;
+  border: 1px solid #028152;
   background-color: #fff;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 30px;
   font-size: 16px;
 }
 
@@ -146,7 +156,7 @@ nav ul li a:hover {
 }
 .nameRate h4 {
   padding: 1px 5px;
-  background-color: #04a904;
+  background-color: #039a63;
   border-radius: 3px;
   color: #fff;
 }

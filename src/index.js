@@ -10,7 +10,7 @@ import "./App.css";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className='appLayout'>
       <Header />
       <Outlet />
     </div>
