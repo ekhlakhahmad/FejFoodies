@@ -35,7 +35,13 @@ nav ul li a:hover {
   width: 60px;
   cursor: pointer;
 }
-nav ul button {
+.rightNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.rightNav button {
   width: 80px;
   padding: 10px;
   border: 2px solid #039a63;
