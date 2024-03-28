@@ -270,3 +270,51 @@ nav ul li a:hover {
 .image-20 {
   background-position: -1900px 0;
 }
+
+/* ****************************** Footer components ********************* */
+
+.footer-section{
+  background-color: #201f1f;
+  color: #fff;
+  padding: 10px 0;
+}
+.footerHead{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+.lan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.lan select{
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.lan img{
+  width: 50px;
+}
+.footerLink{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+.footerLink p{
+  font-weight: bold;
+}
+.footerLink ul li{
+  padding: 5px 0;
+}
+.footerLink ul li a{
+  color: #fff;
+}
+.footerLink a:hover{
+  color: brown;
+}
+.socialLinks a{
+  padding: 8px;
+  color: #fff;
+}

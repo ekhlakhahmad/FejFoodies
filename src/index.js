@@ -7,12 +7,14 @@ import About from "./Component/About";
 import Gallary from "./Component/Gallary";
 import Header from "./Component/Header";
 import "./App.css";
+import Footer from './Component/Footer';
 
 const AppLayout = () => {
   return (
     <div className='appLayout'>
       <Header />
       <Outlet />
+      <Footer/>
     </div>
   );
 };
