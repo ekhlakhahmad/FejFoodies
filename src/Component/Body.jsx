@@ -15,8 +15,31 @@ const Body = () => {
 		setNewSearchData(searchdata);
 	};
 	const filteredList = () => {
-		const newdata = listOfRestaurant.filter((res) => res.info.avgRating > 4);
-		setListOfRestaurant(newdata);
+		const newdata = listOfRestaurant.filter((e) => e.info.avgRating > 4.5);
+		setNewSearchData(newdata);
+	};
+	const nearme = () => {
+		const newdata = listOfRestaurant.filter(
+			(e) => e.info.sla.lastMileTravel <= 3
+		);
+		setNewSearchData(newdata);
+	};
+	const veg = () => {
+		const newdata = listOfRestaurant.filter((e) => e.info.veg === true);
+		setNewSearchData(newdata);
+	};
+	const nonveg = () => {
+		const newdata = listOfRestaurant.filter((e) => e.info.veg != true);
+		setNewSearchData(newdata);
+	};
+	const lowprice = () => {
+		const newdata = listOfRestaurant.filter((e) => {
+			const costForTwo = e.info.costForTwo;
+			const numericValue = costForTwo.match(/\d+/);
+			const costAsNumber = numericValue ? parseInt(numericValue[0]) : null;
+			return costAsNumber < 300;
+		});
+		setNewSearchData(newdata);
 	};
 
 	useEffect(() => {
@@ -41,7 +64,15 @@ const Body = () => {
 	) : (
 		<div>
 			<div className="filterBtn">
-				<button className="fiteredBtn" onClick={filteredList}>Top Rated Restaurant</button>
+				<button className="fiteredBtn" onClick={filteredList}>
+					Ratting 4.5+
+				</button>
+				<button className="fiteredBtn" onClick={nearme}>
+					Near me 3KM
+				</button>
+				<button className="fiteredBtn" onClick={lowprice}>
+					Low Price 299
+				</button>
 				<div className="inputSec">
 					<input
 						type="text"
@@ -53,6 +84,13 @@ const Body = () => {
 						Search
 					</button>
 				</div>
+				<button className="fiteredBtn" onClick={veg}>
+					Veg
+				</button>
+				<button className="fiteredBtn" onClick={nonveg}>
+					Non-Veg
+				</button>
+				<button className="fiteredBtn">Mix-veg</button>
 			</div>
 			<div className="main-container">
 				{newSearchData.map((res) => {

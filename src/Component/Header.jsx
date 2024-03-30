@@ -2,17 +2,36 @@ import React, { useState } from 'react'
 import LOGO from "../Assests/Group_1.png";
 import { Link } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdHistory, MdNotifications, MdOutlineLightMode } from "react-icons/md";
 import { MdNightlight } from "react-icons/md";
+import { VscThreeBars } from "react-icons/vsc";
+import { IoLocationOutline } from "react-icons/io5";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
+import { CiDeliveryTruck } from "react-icons/ci";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+
+
+import {
+	FaFirstOrderAlt,
+	FaRegHeart,
+	FaRegStar,
+	FaRegUserCircle,
+	FaUserCircle,
+} from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
+import { IoIosNotifications } from "react-icons/io";
+import { RiCoupon4Line } from "react-icons/ri";
 
 const Header = () => {
 	const [login, setLogin] = useState("Login");
 	const [dark, setDark] = useState(<MdOutlineLightMode />);
+
+	const [isShow, setIsShow] = useState(false);
+
 	return (
 		<div className="header-sec">
-			<div className="logo">
-				<img src={LOGO} alt="logo" />
-			</div>
+			<img src={LOGO} alt="logo" />
 			<nav>
 				<ul>
 					<li>
@@ -37,7 +56,8 @@ const Header = () => {
 					<p>0</p>
 					<BsCart4 />
 				</div>
-				<div className='darkMode'
+				<div
+					className="darkMode"
 					onClick={() => {
 						setDark(
 							dark.type === MdOutlineLightMode ? (
@@ -55,6 +75,111 @@ const Header = () => {
 					}}>
 					{login}
 				</button>
+				<div
+					onClick={() => {
+						setIsShow(true);
+					}}>
+					<VscThreeBars />
+				</div>
+				<div className="logo">
+					{isShow && (
+						<div className="sidebar">
+							<div className="top">
+								<div className="topprofile">
+									<p>
+										<FaRegUserCircle />
+									</p>
+									<p>Ekhlakh Ahmad</p>
+									<p
+										onClick={() => {
+											setIsShow(false);
+										}}>
+										<RxCross1 />
+									</p>
+								</div>
+							</div>
+							<div className="middle">
+								<ul>
+									<li>
+										<a href="#">
+											<span>
+												<CgProfile />
+											</span>
+											Profile
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<CiDeliveryTruck />
+											</span>
+											Order
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<FaRegHeart />
+											</span>
+											Wish List
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<IoMdNotificationsOutline />
+											</span>
+											Notification
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<MdHistory />
+											</span>
+											History
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<FaRegStar />
+											</span>
+											Star
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<RiCoupon4Line />
+											</span>
+											Coupon
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<IoLocationOutline />
+											</span>
+											Address
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<HiOutlineDevicePhoneMobile />
+											</span>
+											Mobile No.
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div className="buttom">
+								<button>Logout</button>
+							</div>
+						</div>
+					)}
+				</div>
 			</div>
 		</div>
 	);

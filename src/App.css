@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +19,16 @@
   align-items: center;
   padding: 10px 80px;
 }
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+.logo .humburger{
+  font-size: 20px;
+} 
 nav ul {
   display: flex;
   justify-content: center;
@@ -28,7 +43,7 @@ nav ul li {
 nav ul li a:hover {
   color: #028152;
 }
-.header-sec .logo img {
+.header-sec img {
   width: 60px;
   cursor: pointer;
 }
@@ -66,10 +81,11 @@ nav ul li a:hover {
 .filterBtn {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
   padding: 20px;
 }
 .filterBtn .fiteredBtn {
+  min-width: 120px;
   border-radius: 100px;
   height: 40px;
   padding: 10px;
@@ -78,6 +94,10 @@ nav ul li a:hover {
   outline: none;
   background-color: #fff;
   border: 2px solid #039a63;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ************************* SEARCH BAR OR BUTTON **************** */
@@ -164,12 +184,19 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
 }
-.addprize {
+.price{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.addDis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cuisines{
+  font-style: italic;
 }
 
 /* ****************************** Shimmer components ********************* */
@@ -275,8 +302,9 @@ nav ul li a:hover {
 
 .footer-section{
   background-color: #201f1f;
-  color: #fff;
   padding: 10px 0;
+  color: #fff;
+
 }
 .footerHead{
   display: flex;
@@ -287,34 +315,95 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 .lan select{
-  padding: 10px;
-  border-radius: 3px;
-  font-size: 16px;
+  color: #000;
+  outline: none;
+  border: none;
 }
 .lan img{
-  width: 50px;
+  width: 20px;
 }
 .footerLink{
   display: flex;
   justify-content: space-between;
   padding: 10px 80px;
 }
-.footerLink p{
-  font-weight: bold;
+.socialLinks{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+  font-size: 20px;
+  transition: all 1s ease 1s;
 }
-.footerLink ul li{
-  padding: 5px 0;
+.socialLinks a:hover{
+  transform: scale(1.2);
 }
-.footerLink ul li a{
-  color: #fff;
+
+
+/* ****************************** Sidebar components ********************* */
+
+.sidebar{
+  width: 250px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top:37px;
+  left:-170px;
+  z-index: 1;
+
 }
-.footerLink a:hover{
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: .5px solid gray;
+  gap: 20px;
+}
+.topprofile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.middle{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid gray;
+  padding: 10px;
+  font-size: 18px;
+}
+.middle ul li a{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+}
+.middle ul li a:hover{
   color: brown;
 }
-.socialLinks a{
-  padding: 8px;
-  color: #fff;
+.buttom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .5px solid gray;
+  padding: 30px 0;
+}
+.buttom button{
+  font-size: 20px;
+  width: 150px;
+}
+.buttom button:hover{
+  background-color: #65ca65;
+  transition: all 0.5s;
 }
