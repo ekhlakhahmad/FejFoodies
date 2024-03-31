@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import LOGO from "../Assests/Group_1.png";
 import { Link } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
-import { MdHistory, MdNotifications, MdOutlineLightMode } from "react-icons/md";
+import { MdHistory, MdOutlineLightMode } from "react-icons/md";
 import { MdNightlight } from "react-icons/md";
 import { VscThreeBars } from "react-icons/vsc";
 import { IoLocationOutline } from "react-icons/io5";
@@ -13,15 +13,13 @@ import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 
 
 import {
-	FaFirstOrderAlt,
 	FaRegHeart,
 	FaRegStar,
 	FaRegUserCircle,
-	FaUserCircle,
 } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
-import { IoIosNotifications } from "react-icons/io";
 import { RiCoupon4Line } from "react-icons/ri";
+import Login from "./Login";
 
 const Header = () => {
 	const [login, setLogin] = useState("Login");
@@ -70,10 +68,12 @@ const Header = () => {
 					{dark}
 				</div>
 				<button
-					onClick={() => {
-						login == "Login" ? setLogin("Logout") : setLogin("Login");
-					}}>
-					{login}
+					onClick={<Login />}
+					// onClick={() => {
+					// 	login == "Login" ? setLogin("Logout") : setLogin("Login");
+					// }}
+				>
+					Login
 				</button>
 				<div
 					className="cursor-pointer"

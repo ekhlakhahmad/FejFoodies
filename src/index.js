@@ -8,6 +8,7 @@ import Gallary from "./Component/Gallary";
 import Header from "./Component/Header";
 import "./App.css";
 import Footer from './Component/Footer';
+import Login from './Component/Login';
 
 const AppLayout = () => {
   return (
@@ -36,6 +37,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/gallary",
         element: <Gallary />,
+      },
+      {
+        path: "/grocery",
+        element: <Login />,
       },
     ],
   },
