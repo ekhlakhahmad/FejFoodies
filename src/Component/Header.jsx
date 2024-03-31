@@ -68,12 +68,10 @@ const Header = () => {
 					{dark}
 				</div>
 				<button
-					onClick={<Login />}
-					// onClick={() => {
-					// 	login == "Login" ? setLogin("Logout") : setLogin("Login");
-					// }}
-				>
-					Login
+					onClick={() => {
+						login == "Login" ? setLogin("Logout") : setLogin("Login");
+					}}>
+					{login}
 				</button>
 				<div
 					className="cursor-pointer"

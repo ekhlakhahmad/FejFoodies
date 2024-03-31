@@ -418,17 +418,20 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px 80px;
+  padding: 50px 80px;
 }
 .formContainer{
-  width: 400px;
+  width: 450px;
   font-size: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+  padding: 60px 30px;
 }
 .formContainer form{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 20px;
+  gap: 30px;
+  font-size: 18px;
 }
 .formContainer form input{
   border: .5px solid gray;
