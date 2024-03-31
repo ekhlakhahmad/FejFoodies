@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdLanguage, MdOutlineLanguage } from "react-icons/md";
 import flag from "../Assests/flag.png";
-import playstore from "../Assests/google-play-badge.png";
+import playstore from "../Assests/googleplaystore.png";
 import appstore from "../Assests/badge-google-play-and-app-store-button.png";
 import {
 	FaLinkedin,
@@ -134,7 +134,7 @@ const Footer = () => {
 								<img
 									src={appstore}
 									alt="appstore"
-									className="w-[100px] bg-white rounded-md"
+									className="w-[100px] bg-white rounded-full"
 								/>
 							</a>
 							<a href="#">

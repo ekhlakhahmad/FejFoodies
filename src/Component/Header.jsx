@@ -76,6 +76,7 @@ const Header = () => {
 					{login}
 				</button>
 				<div
+					className="cursor-pointer"
 					onClick={() => {
 						setIsShow(true);
 					}}>
@@ -91,6 +92,7 @@ const Header = () => {
 									</p>
 									<p>Ekhlakh Ahmad</p>
 									<p
+										className="cursor-pointer"
 										onClick={() => {
 											setIsShow(false);
 										}}>

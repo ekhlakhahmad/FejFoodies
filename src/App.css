@@ -211,16 +211,18 @@ nav ul li a:hover {
 .sprite-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  margin: 30px 60px;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 80px;
 }
 
 .sprite-container img {
-  width: 400px;
+  width: 430px;
   height: 300px;
-  border-radius: 10px;
-  margin: 10px 20px;
+  border-radius: 8px;
   cursor: pointer;
+  object-position: top;
+  object-fit: cover;
 }
 .image-2 {
   background-position: -100px 0;
@@ -404,6 +406,7 @@ nav ul li a:hover {
   width: 150px;
 }
 .buttom button:hover{
-  background-color: #65ca65;
+  background-color: brown;
+  color: #fff;
   transition: all 0.5s;
 }
