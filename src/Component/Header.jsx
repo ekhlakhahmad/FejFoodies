@@ -33,7 +33,7 @@ const Header = () => {
 			<nav>
 				<ul>
 					<li>
-						<Link to="/">Home</Link>
+						<Link to="/home">Home</Link>
 					</li>
 					<li>
 						<Link to="/gallary">Gallary</Link>
@@ -67,12 +67,10 @@ const Header = () => {
 					}}>
 					{dark}
 				</div>
-				<button
-					onClick={() => {
-						login == "Login" ? setLogin("Logout") : setLogin("Login");
-					}}>
-					{login}
+				<button>
+					<Link to="/login">Login</Link>
 				</button>
+
 				<div
 					className="cursor-pointer"
 					onClick={() => {
@@ -175,7 +173,9 @@ const Header = () => {
 								</ul>
 							</div>
 							<div className="buttom">
-								<button>Logout</button>
+								<button>
+									<Link to="/home">Logout</Link>
+								</button>
 							</div>
 						</div>
 					)}
