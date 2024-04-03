@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "../Assests/img1.png";
+import img2 from "../Assests/img2.jpg";
+import img3 from "../Assests/img3.jpg";
+import img4 from "../Assests/img4.jpg";
 
 const Home = () => {
 	return (
@@ -18,8 +21,8 @@ const Home = () => {
 					</p>
 					<button>
 						<Link
-							to="/"
-							className="px-6 py-4 rounded-full border-green-700 border bg-[#58c076]">
+							to="/home"
+							className="px-6 py-4 rounded-full border-green-700 border bg-transparent hover:bg-green-100">
 							Get Started
 						</Link>
 					</button>
@@ -120,20 +123,24 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
-			<div className="flex justify-between px-20 py-40 bg-green-200">
-				<div className="w-1/2">
-					<h1 className="text-4xl pb-4">Visit our Restuarants</h1>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-						ratione non, distinctio temporibus fuga vel, vitae ad recusandae
-						illo maxime reiciendis unde quo qui aspernatur iusto. Dolorem enim
-						tempore veritatis.
-					</p>
-				</div>
-				<div>
-					<button className="w-[200px] px-8 py-4 border border-green-500 bg-transparent rounded-full text-2xl">
-						Visit Now
-					</button>
+			<div className="flex flex-col px-20 py-10 bg-green-100">
+				<h1 className="text-4xl font-bold text-center">How Does It Work?</h1>
+				<div className="flex justify-between">
+					<div className="flex flex-col justify-center items-center gap-4">
+						<img src={img4} alt="" className="w-[100px] rounded" />
+						<h1>Easy to order</h1>
+						<p>you only need a few steps in ordering fodd</p>
+					</div>
+					<div className="flex flex-col justify-center items-center gap-4">
+						<img src={img2} alt="" className="w-[100px] rounded" />
+						<h1>Fastest Delivery</h1>
+						<p>Delivery that it always ontime even faster</p>
+					</div>
+					<div className="flex flex-col justify-center items-center gap-4">
+						<img src={img3} alt="" className="w-[100px] rounded" />
+						<h1>Best Quality</h1>
+						<p>Not only fast for us quality is also number one</p>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -130,13 +130,17 @@ const Footer = () => {
 						<div className="flex gap-6 mt-8">
 							<a href="#">
 								<img
-									src=""
+									src="https://w7.pngwing.com/pngs/30/346/png-transparent-app-store-iphone-android-apple-electronics-text-logo.png"
 									alt="appstore"
-									className="w-[100px] bg-white rounded-full"
+									className="w-[100px] bg-white rounded-md"
 								/>
 							</a>
 							<a href="#">
-								<img src="" alt="playstore" className="w-[100px]" />
+								<img
+									src="https://static.vecteezy.com/system/resources/previews/024/170/871/non_2x/badge-google-play-and-app-store-button-download-free-png.png"
+									alt="playstore"
+									className="w-[100px] bg-white rounded-md"
+								/>
 							</a>
 						</div>
 					</ul>

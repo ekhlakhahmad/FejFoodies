@@ -68,7 +68,9 @@ const Header = () => {
 					{dark}
 				</div>
 				<button>
-					<Link to="/login">Login</Link>
+					<Link className="loginBtn" to="/login">
+						Login
+					</Link>
 				</button>
 
 				<div
@@ -174,7 +176,9 @@ const Header = () => {
 							</div>
 							<div className="buttom">
 								<button>
-									<Link to="/home">Logout</Link>
+									<Link to="/" className="LogoutBtn">
+										Logout
+									</Link>
 								</button>
 							</div>
 						</div>
