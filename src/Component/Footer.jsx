@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { MdLanguage, MdOutlineLanguage } from "react-icons/md";
 import flag from "../Assests/flag.png";
-import playstore from "../Assests/googleplaystore.png";
-import appstore from "../Assests/badge-google-play-and-app-store-button.png";
 import {
 	FaLinkedin,
 	FaInstagram,
@@ -132,13 +130,13 @@ const Footer = () => {
 						<div className="flex gap-6 mt-8">
 							<a href="#">
 								<img
-									src={appstore}
+									src=""
 									alt="appstore"
 									className="w-[100px] bg-white rounded-full"
 								/>
 							</a>
 							<a href="#">
-								<img src={playstore} alt="playstore" className="w-[100px]" />
+								<img src="" alt="playstore" className="w-[100px]" />
 							</a>
 						</div>
 					</ul>
