@@ -11,7 +11,7 @@ const Home = () => {
 			<div className="flex justify-between items-center px-20 py-10 gap-5">
 				<div className="w-1/2 flex flex-col items-start gap-10">
 					<h1 className="font-bold text-6xl">
-						We provide super fast delivary service
+						Enjoy Our <span className="text-green-700">Delicious Meal</span>
 					</h1>
 					<p>
 						Lorem ipsum dolor sit consectetur, adipisicing elit. Tempora debitis
@@ -21,8 +21,8 @@ const Home = () => {
 					</p>
 					<button>
 						<Link
-							to="/home"
-							className="px-6 py-4 rounded-full border-green-700 border bg-transparent hover:bg-green-100">
+							to="/login"
+							className="px-6 py-4 rounded-full border-green-700 border bg-transparent hover:bg-green-700 hover:text-white transition-all">
 							Get Started
 						</Link>
 					</button>
@@ -41,7 +41,7 @@ const Home = () => {
 					<img
 						src="https://img.freepik.com/premium-photo/family-breaking-fast_8595-15021.jpg"
 						alt="image"
-						className="w-[500px] h-[500px] rounded-[50%]"
+						className="w-[500px] h-[500px] rounded-[50%] object-cover"
 					/>
 				</div>
 			</div>
@@ -52,7 +52,7 @@ const Home = () => {
 						src="https://www.wfp.org/sites/default/files/styles/media_embed/public/2021-07/gfl-320x320_op.png?itok=s20GPAxq"
 						alt=""
 					/>
-					<h1>Faster Delivary</h1>
+					<h1>Good Food</h1>
 					<p>
 						Lorem ipsum dolor sit consectetur adipisicing elit.Lorem ipsum dolor
 						sit consectetur adipisicing elit.Lorem ipsum dolor sit consectetur
@@ -69,7 +69,7 @@ const Home = () => {
 						src="https://static.vecteezy.com/system/resources/previews/012/871/553/original/certified-halal-food-logo-best-for-food-packaging-islamic-food-logo-png.png"
 						alt=""
 					/>
-					<h1>Faster Delivary</h1>
+					<h1>Halal Food</h1>
 					<p>
 						Lorem ipsum dolor sit consectetur adipisicing elit.Lorem ipsum dolor
 						sit consectetur adipisicing elit.Lorem ipsum dolor sit consectetur
@@ -81,11 +81,11 @@ const Home = () => {
 				</div>
 				<div className="flex flex-col justify-center items-center gap-4 bg-[#b7ffcc92] rounded-xl px-4 py-8">
 					<img
-						className="w-[100px]"
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/492px-Food_Network_New_Logo.png"
+						className="w-[100px] h-[100px] rounded-[50%]"
+						src="https://www.rewardsnetwork.com/wp-content/uploads/2016/01/Servers_Main1.jpg"
 						alt=""
 					/>
-					<h1>Faster Delivary</h1>
+					<h1>Serve Fast</h1>
 					<p>
 						Lorem ipsum dolor sit consectetur adipisicing elit.Lorem ipsum dolor
 						sit consectetur adipisicing elit.Lorem ipsum dolor sit consectetur
@@ -123,8 +123,10 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
-			<div className="flex flex-col px-20 py-10 bg-green-100">
-				<h1 className="text-4xl font-bold text-center">How Does It Work?</h1>
+			<div className="flex flex-col px-20 py-32 bg-green-100">
+				<h1 className="text-4xl font-bold text-center py-10">
+					How Does It Work?
+				</h1>
 				<div className="flex justify-between">
 					<div className="flex flex-col justify-center items-center gap-4">
 						<img src={img4} alt="" className="w-[100px] rounded" />

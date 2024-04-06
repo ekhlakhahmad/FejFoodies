@@ -22,10 +22,12 @@ const Register = () => {
 
 		if (!isValidEmail) {
 			alert("Email is not valid");
+			return;
 		}
 
 		if (!isValidPassword) {
 			alert("Password is not valid");
+			return;
 		}
 
 		const auth = getAuth();
@@ -44,16 +46,6 @@ const Register = () => {
 		<div className="mainContainer">
 			<div className="formContainer">
 				<form onSubmit={handleSubmit}>
-					<div>
-						<label htmlFor="name">Name:</label>
-						<input
-							onChange={(e) => setEmail(e.target.value)}
-							className="w-full"
-							type="text"
-							placeholder="Enter your Name"
-						/>
-						<br />
-					</div>
 					<div>
 						<label htmlFor="email">E-mail:</label>
 						<br />
@@ -85,7 +77,9 @@ const Register = () => {
 					</div>
 					<div className="text-center relative bottom-6">
 						Already have an account?
-						<Link to="/login">Login</Link>
+						<Link to="/login" className="text-blue-800 underline">
+							Login
+						</Link>
 					</div>
 					{isError && alert({ errorMessage })}
 				</form>

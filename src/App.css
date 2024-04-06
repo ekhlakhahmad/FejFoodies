@@ -61,7 +61,9 @@ nav ul li a:hover {
   position: absolute;
   top: -15px;
   left: 5px;
-  color: #028152;
+  font-weight: bold;
+  color: red;
+  z-index: 1;
 }
 .darkMode{
   cursor: pointer;
@@ -69,7 +71,7 @@ nav ul li a:hover {
 .rightNav .loginBtn{
   padding: 5px 20px;
   border: 1px solid #028152;
-  background-color: #fff;
+  background-color: transparent;
   cursor: pointer;
   border-radius: 30px;
   font-size: 16px;
@@ -97,6 +99,11 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.filterBtn button:hover{
+  background-color: #039a63;
+  color: #fff;
+  transition: all 0.2s linear;
 }
 
 /* ************************* SEARCH BAR OR BUTTON **************** */
@@ -303,7 +310,7 @@ nav ul li a:hover {
 
 .footer-section{
   background-color: #201f1f;
-  padding: 10px 0;
+  padding: 40px 0;
   color: #fff;
 
 }
@@ -454,3 +461,5 @@ nav ul li a:hover {
 .imgContainer img{
   width: 500px;
 }
+
+/* ************************* Dark Mode Created **************** */

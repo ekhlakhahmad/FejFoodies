@@ -22,7 +22,7 @@ import { RiCoupon4Line } from "react-icons/ri";
 import Login from "./Login";
 
 const Header = () => {
-	const [login, setLogin] = useState("Login");
+	const [login, setLogin] = useState();
 	const [dark, setDark] = useState(<MdOutlineLightMode />);
 
 	const [isShow, setIsShow] = useState(false);
@@ -175,7 +175,11 @@ const Header = () => {
 								</ul>
 							</div>
 							<div className="buttom">
-								<button>
+								<button
+									onClick={() => {
+										alert("are you sure Logout")
+										setIsShow(false);
+									}}>
 									<Link to="/" className="LogoutBtn">
 										Logout
 									</Link>

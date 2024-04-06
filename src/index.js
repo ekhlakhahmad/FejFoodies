@@ -11,6 +11,8 @@ import Footer from './Component/Footer';
 import Login from './Component/Login';
 import Register from "./Component/Register";
 import Home from "./Component/Home";
+import Contact from "./Component/Contact";
+import Grocery from "./Component/Grocery";
 
 const AppLayout = () => {
 	return (
@@ -37,12 +39,20 @@ const appRouter = createBrowserRouter([
 				element: <Body />,
 			},
 			{
+				path: "/gallary",
+				element: <Gallary />,
+			},
+			{
 				path: "/about",
 				element: <About />,
 			},
 			{
-				path: "/gallary",
-				element: <Gallary />,
+				path: "/contact",
+				element: <Contact />,
+			},
+			{
+				path: "/grocery",
+				element: <Grocery />,
 			},
 			{
 				path: "/register",

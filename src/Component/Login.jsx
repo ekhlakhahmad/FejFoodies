@@ -22,44 +22,30 @@ const Login = () => {
 		const isValidPassword =
 			/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
 
-		if (!isValidEmail) {
-			alert("Email is not valid");
-		}
+		// if (!isValidEmail) {
+		// 	alert("Email is not valid");
+		// 	return;
+		// }
 
-		if (!isValidPassword) {
-			alert("Password is not valid");
-		}
+		// if (!isValidPassword) {
+		// 	alert("Password is not valid");
+		// 	return;
+		// }
 
 		const auth = getAuth();
 
 		signInWithEmailAndPassword(auth, email, password)
 			.then((userCredential) => {
-				navigate("/");
+				navigate("/home");
 			})
 			.catch((error) => {
 				setError(true);
-				// setErrorMessage(error.message.substring(22, 42));
-				console.log(error);
+				setErrorMessage(error.message.substring(22, 42));
+				alert(error);
 			});
 	};
 
 	return (
-		// <div className="h-screen flex items-center justify-center">
-		// 	<form className="w-4/12 flex flex-col gap-2" onSubmit={handleSubmit}>
-		// 		<input
-		// 			className="border border-black px-2 py-1 rounded-md"
-		// 			type="email"
-		// 			onChange={(e) => setEmail(e.target.value)}
-		// 		/>
-		// 		<input
-		// 			className="border border-black px-2 py-1 rounded-md"
-		// 			type="text"
-		// 			onChange={(e) => setPassword(e.target.value)}
-		// 		/>
-		// 		<button className="bg-slate-500 px-2 py-1 rounded-md">Login</button>
-		// 		{error && <p>{errorMessage}</p>}
-		// 	</form>
-		// </div>
 		<div className="mainContainer">
 			<div className="formContainer">
 				<form onSubmit={handleSubmit}>
@@ -94,7 +80,9 @@ const Login = () => {
 					</div>
 					<div className="text-center relative bottom-6">
 						Don't have an account?
-						<Link to="/register">Signup</Link>
+						<Link to="/register" className="underline text-blue-800">
+							Signup
+						</Link>
 					</div>
 					<div className="btn">
 						<button className="w-full bg-transparent border-4 hover:bg-[#f4f6f4]">
@@ -109,6 +97,7 @@ const Login = () => {
 								Facebook
 							</span>
 						</button>
+						{/* {error && <p>{errorMessage}</p>} */}
 					</div>
 				</form>
 			</div>

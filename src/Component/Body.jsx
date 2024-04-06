@@ -90,7 +90,7 @@ const Body = () => {
 				<button className="fiteredBtn" onClick={nonveg}>
 					Non-Veg
 				</button>
-				<button className="fiteredBtn">Mix-veg</button>
+				<button className="fiteredBtn">More Filter</button>
 			</div>
 			<div className="main-container">
 				{newSearchData.map((res) => {
