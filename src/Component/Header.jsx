@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import LOGO from "../Assests/COMPUTER (4)-modified.png";
+import LOGO from "../Assests/FEJ LOGO.png";
 import { Link } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 import { MdHistory, MdOutlineLightMode } from "react-icons/md";
