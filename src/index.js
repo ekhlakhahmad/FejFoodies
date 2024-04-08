@@ -13,6 +13,7 @@ import Register from "./Component/Register";
 import Home from "./Component/Home";
 import Contact from "./Component/Contact";
 import Grocery from "./Component/Grocery";
+import Profile from "./Component/Profile";
 
 const AppLayout = () => {
 	return (
@@ -61,6 +62,10 @@ const appRouter = createBrowserRouter([
 			{
 				path: "/login",
 				element: <Login />,
+			},
+			{
+				path: "/profile",
+				element: <Profile />,
 			},
 		],
 	},

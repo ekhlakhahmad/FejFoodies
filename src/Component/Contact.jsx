@@ -9,26 +9,26 @@ const Contact = () => {
 				<div>
 					<form className="w-5/6">
 						<input
-							className="w-full p-2 outline-none border-2 my-2 text-blue-600 text-xl rounded-md border-blue-600"
+							className="w-full p-2 outline-none border-2 my-2 text-[#1b9b86] text-xl rounded-md border-[#1b9b86]"
 							type="text"
 							placeholder="name"
 						/>
 						<input
-							className="w-full p-2 outline-none border-2 my-2 text-blue-600 text-xl rounded-md border-blue-600"
+							className="w-full p-2 outline-none border-2 my-2 text-[#1b9b86] text-xl rounded-md border-[#1b9b86]"
 							type="email"
 							placeholder="example@gmail.com"
 						/>
 						<textarea
-							name=""
+							name="message"
+							placeholder="type your message"
 							id=""
-							cols="30"
+							cols="20"
 							rows="10"
-							placeholder="Message"
-							className="w-full p-2 outline-none border-2 my-2 text-blue-600 text-xl rounded-md border-blue-600">
+							className="w-full p-2 outline-none border-2 my-2 text-[#1b9b86] text-xl rounded-md border-[#1b9b86]">
 							{" "}
 						</textarea>
 						<input
-							className="w-full p-2 outline-none border-2 my-2 text-blue-600 text-xl rounded-md border-blue-600 cursor-pointer hover:bg-blue-300 hover:text-black"
+							className="w-full p-2 outline-none border-2 my-2 text-[#1b9b86] text-xl rounded-md border-[#1b9b86] cursor-pointer hover:bg-[#1b9b86] hover:text-black"
 							type="submit"
 						/>
 					</form>

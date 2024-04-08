@@ -20,6 +20,7 @@ import {
 import { RxCross1 } from "react-icons/rx";
 import { RiCoupon4Line } from "react-icons/ri";
 import Login from "./Login";
+import About from "./About";
 
 const Header = () => {
 	const [login, setLogin] = useState();
@@ -101,12 +102,14 @@ const Header = () => {
 							<div className="middle">
 								<ul>
 									<li>
-										<a href="#">
-											<span>
-												<CgProfile />
-											</span>
-											Profile
-										</a>
+										<Link to="/Profile">
+											<a href="#">
+												<span>
+													<CgProfile />
+												</span>
+												Profile
+											</a>
+										</Link>
 									</li>
 									<li>
 										<a href="#">
@@ -177,7 +180,7 @@ const Header = () => {
 							<div className="buttom">
 								<button
 									onClick={() => {
-										alert("are you sure Logout")
+										alert("are you sure Logout");
 										setIsShow(false);
 									}}>
 									<Link to="/" className="LogoutBtn">

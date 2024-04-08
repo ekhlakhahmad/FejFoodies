@@ -90,8 +90,19 @@ const Body = () => {
 				<button className="fiteredBtn" onClick={nonveg}>
 					Non-Veg
 				</button>
-				<button className="fiteredBtn">More Filter</button>
+				<div className="border-2 rounded-full border-[#039a63] transition-all 2s">
+					<select className="py-2 px-2 rounded-full outline-none  hover:cursor-pointer">
+						<option>More Filter</option>
+						<option>Biryani</option>
+						<option>Paneer</option>
+						<option>Burger</option>
+						<option>Dhosa</option>
+						<option>Chhole</option>
+						<option>Rajma</option>
+					</select>
+				</div>
 			</div>
+
 			<div className="main-container">
 				{newSearchData.map((res) => {
 					return <RestaurantsCart key={res.info.id} data={res.info} />;
