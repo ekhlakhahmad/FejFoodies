@@ -7,6 +7,7 @@ const Body = () => {
 	const [listOfRestaurant, setListOfRestaurant] = useState([]);
 	const [search, setSearch] = useState([]);
 	const [newSearchData, setNewSearchData] = useState([]);
+	const [morefilter, setMorefilter] = useState("More Filter");
 
 	const searchBar = () => {
 		const searchdata = listOfRestaurant.filter((e) =>
@@ -31,6 +32,9 @@ const Body = () => {
 	const nonveg = () => {
 		const newdata = listOfRestaurant.filter((e) => e.info.veg != true);
 		setNewSearchData(newdata);
+	};
+	const more = (e) => {
+		setMorefilter(e.target.value);
 	};
 	const lowprice = () => {
 		const newdata = listOfRestaurant.filter((e) => {
@@ -91,14 +95,17 @@ const Body = () => {
 					Non-Veg
 				</button>
 				<div className="border-2 rounded-full border-[#039a63] transition-all 2s">
-					<select className="py-2 px-2 rounded-full outline-none  hover:cursor-pointer">
-						<option>More Filter</option>
-						<option>Biryani</option>
-						<option>Paneer</option>
-						<option>Burger</option>
-						<option>Dhosa</option>
-						<option>Chhole</option>
-						<option>Rajma</option>
+					<select
+						className="py-2 px-2 rounded-full outline-none  hover:cursor-pointer"
+						value={morefilter}
+						onChange={(e) => setMorefilter(e.target.value)}>
+						<option value={"moreFilter"}>More Filter</option>
+						<option value={"Biryani"}>Biryani</option>
+						<option value={"Paneer"}>Paneer</option>
+						<option value={"Burger"}>Burger</option>
+						<option value={"Dhosa"}>Dhosa</option>
+						<option value={"Chhole"}>Chhole</option>
+						<option value={"Rajma"}>Rajma</option>
 					</select>
 				</div>
 			</div>

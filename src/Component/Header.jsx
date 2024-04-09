@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import LOGO from "../Assests/FEJ LOGO.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 import { MdHistory, MdOutlineLightMode } from "react-icons/md";
 import { MdNightlight } from "react-icons/md";
@@ -20,7 +20,6 @@ import {
 import { RxCross1 } from "react-icons/rx";
 import { RiCoupon4Line } from "react-icons/ri";
 import Login from "./Login";
-import About from "./About";
 
 const Header = () => {
 	const [login, setLogin] = useState();
@@ -34,19 +33,19 @@ const Header = () => {
 			<nav>
 				<ul>
 					<li>
-						<Link to="/home">Home</Link>
+						<NavLink to="/home">Home</NavLink>
 					</li>
 					<li>
-						<Link to="/gallary">Gallary</Link>
+						<NavLink to="/gallary">Gallary</NavLink>
 					</li>
 					<li>
-						<Link to="/about">About</Link>
+						<NavLink to="/about">About</NavLink>
 					</li>
 					<li>
-						<Link to="/contact">Contact</Link>
+						<NavLink to="/contact">Contact</NavLink>
 					</li>
 					<li>
-						<Link to="/grocery">Grocery</Link>
+						<NavLink to="/grocery">Grocery</NavLink>
 					</li>
 				</ul>
 			</nav>
@@ -69,9 +68,9 @@ const Header = () => {
 					{dark}
 				</div>
 				<button>
-					<Link className="loginBtn" to="/login">
+					<NavLink className="loginBtn" to="/login">
 						Login
-					</Link>
+					</NavLink>
 				</button>
 
 				<div
@@ -102,14 +101,14 @@ const Header = () => {
 							<div className="middle">
 								<ul>
 									<li>
-										<Link to="/Profile">
+										<NavLink to="/Profile">
 											<a href="#">
 												<span>
 													<CgProfile />
 												</span>
 												Profile
 											</a>
-										</Link>
+										</NavLink>
 									</li>
 									<li>
 										<a href="#">
@@ -183,9 +182,9 @@ const Header = () => {
 										alert("are you sure Logout");
 										setIsShow(false);
 									}}>
-									<Link to="/" className="LogoutBtn">
+									<NavLink to="/" className="LogoutBtn">
 										Logout
-									</Link>
+									</NavLink>
 								</button>
 							</div>
 						</div>

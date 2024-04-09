@@ -43,6 +43,9 @@ nav ul li {
 nav ul li a:hover {
   color: #028152;
 }
+.active{
+  color: #039a63;
+}
 .header-sec img {
   width: 60px;
   cursor: pointer;
@@ -62,19 +65,24 @@ nav ul li a:hover {
   top: -15px;
   left: 5px;
   font-weight: bold;
-  color: red;
+  color: green;
   z-index: 1;
 }
 .darkMode{
   cursor: pointer;
 }
 .rightNav .loginBtn{
-  padding: 5px 20px;
+  padding: 8px 20px;
   border: 1px solid #028152;
   background-color: transparent;
   cursor: pointer;
   border-radius: 30px;
   font-size: 16px;
+}
+.rightNav .loginBtn:hover{
+  background-color: #039a63;
+  color: #fff;
+  transition: all 0.2s linear;
 }
 
 /* *********************  Filter Section  *********************/
@@ -154,8 +162,7 @@ nav ul li a:hover {
   transition: all ease 0.2s;
 }
 .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: scale(1.02);
 }
 .card img {
@@ -165,9 +172,6 @@ nav ul li a:hover {
   object-fit: cover;
   object-position: top;
   transition: all 0.5s ease;
-}
-.card img:hover {
-  transform: scale(1.04);
 }
 .nameRate {
   display: flex;
@@ -398,7 +402,7 @@ nav ul li a:hover {
   padding: 10px 0;
 }
 .middle ul li a:hover{
-  color: brown;
+  color: #039a63;
 }
 .buttom{
   display: flex;
@@ -415,9 +419,9 @@ nav ul li a:hover {
   width: 150px;
 }
 .buttom .LogoutBtn:hover{
-  background-color: brown;
+  background-color: #039a63;
   color: #fff;
-  transition: all 0.5s;
+  transition: all 0.2s linear;
 }
 
 

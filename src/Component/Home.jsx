@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "../Assests/img1.png";
-import img2 from "../Assests/img2.jpg";
-import img3 from "../Assests/img3.jpg";
-import img4 from "../Assests/img4.jpg";
+import FastDelivery from "../Assests/FastDelivery.png";
+import BestQuality from "../Assests/BestQuality.png";
+import EasyToOrder from "../Assests/EasyToOrder.png";
 
 const Home = () => {
 	return (
@@ -58,7 +58,7 @@ const Home = () => {
 						sit consectetur adipisicing elit.Lorem ipsum dolor sit consectetur
 						adipisicing elit.
 					</p>
-					<button className="px-4 py-2 border-green-700 border rounded-full hover:bg-[#58c076]">
+					<button className="px-4 py-2 border-green-700 border rounded-full hover:bg-green-700 hover:text-white ">
 						Read more...
 					</button>
 				</div>
@@ -75,7 +75,7 @@ const Home = () => {
 						sit consectetur adipisicing elit.Lorem ipsum dolor sit consectetur
 						adipisicing elit.
 					</p>
-					<button className="px-4 py-2 border-green-700 border rounded-full hover:bg-[#58c076]">
+					<button className="px-4 py-2 border-green-700 border rounded-full hover:bg-green-700 hover:text-white ">
 						Read more...
 					</button>
 				</div>
@@ -91,7 +91,7 @@ const Home = () => {
 						sit consectetur adipisicing elit.Lorem ipsum dolor sit consectetur
 						adipisicing elit.
 					</p>
-					<button className="px-4 py-2 border-green-700 border rounded-full hover:bg-[#58c076]">
+					<button className="px-4 py-2 border-green-700 border rounded-full hover:bg-green-700 hover:text-white ">
 						Read more...
 					</button>
 				</div>
@@ -117,7 +117,7 @@ const Home = () => {
 					<button>
 						<Link
 							to="/"
-							className="px-6 py-4 rounded-full border-green-700 border-2">
+							className="px-6 py-4 rounded-full border-green-700 border-2 hover:bg-green-700 hover:text-white ">
 							Order Now
 						</Link>
 					</button>
@@ -128,18 +128,18 @@ const Home = () => {
 					How Does It Work?
 				</h1>
 				<div className="flex justify-between">
-					<div className="flex flex-col justify-center items-center gap-4">
-						<img src={img4} alt="" className="w-[100px] rounded" />
+					<div className="flex flex-col justify-center items-center gap-4 p-4 border-2 rounded-2xl border-green-700">
+						<img src={EasyToOrder} alt="" className="w-[100px] rounded" />
 						<h1>Easy to order</h1>
 						<p>you only need a few steps in ordering fodd</p>
 					</div>
-					<div className="flex flex-col justify-center items-center gap-4">
-						<img src={img2} alt="" className="w-[100px] rounded" />
+					<div className="flex flex-col justify-center items-center gap-4 p-4 border-2 rounded-2xl border-green-700">
+						<img src={FastDelivery} alt="" className="w-[100px] rounded" />
 						<h1>Fastest Delivery</h1>
 						<p>Delivery that it always ontime even faster</p>
 					</div>
-					<div className="flex flex-col justify-center items-center gap-4">
-						<img src={img3} alt="" className="w-[100px] rounded" />
+					<div className="flex flex-col justify-center items-center gap-4 p-4 border-2 rounded-2xl border-green-700">
+						<img src={BestQuality} alt="" className="w-[100px] rounded" />
 						<h1>Best Quality</h1>
 						<p>Not only fast for us quality is also number one</p>
 					</div>
