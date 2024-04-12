@@ -29,7 +29,9 @@ const Header = () => {
 
 	return (
 		<div className="header-sec">
-			<img src={LOGO} alt="logo" />
+			<a href="#">
+				<img src={LOGO} alt="logo" />
+			</a>
 			<nav>
 				<ul>
 					<li>

@@ -127,7 +127,7 @@ const Home = () => {
 				<h1 className="text-4xl font-bold text-center py-10">
 					How Does It Work?
 				</h1>
-				<div className="flex justify-between">
+				<div className="flex justify-between gap-8">
 					<div className="flex flex-col justify-center items-center gap-4 p-4 border-2 rounded-2xl border-green-700">
 						<img src={EasyToOrder} alt="" className="w-[100px] rounded" />
 						<h1>Easy to order</h1>
@@ -137,6 +137,11 @@ const Home = () => {
 						<img src={FastDelivery} alt="" className="w-[100px] rounded" />
 						<h1>Fastest Delivery</h1>
 						<p>Delivery that it always ontime even faster</p>
+					</div>
+					<div className="flex flex-col justify-center items-center gap-4 p-4 border-2 rounded-2xl border-green-700">
+						<img src={BestQuality} alt="" className="w-[100px] rounded" />
+						<h1>Best Quality</h1>
+						<p>Not only fast for us quality is also number one</p>
 					</div>
 					<div className="flex flex-col justify-center items-center gap-4 p-4 border-2 rounded-2xl border-green-700">
 						<img src={BestQuality} alt="" className="w-[100px] rounded" />
