@@ -68,7 +68,7 @@ const Body = () => {
 	) : (
 		<div>
 			<div className="filterBtn">
-				<button className="fiteredBtn" onClick={filteredList}>
+				<button className="fiteredBtn sm:text-sm" onClick={filteredList}>
 					Ratting 4.5+
 				</button>
 				<button className="fiteredBtn" onClick={nearme}>
