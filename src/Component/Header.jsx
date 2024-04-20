@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import LOGO from "../Assests/Foodies4.png";
+import LOGO from "../Assests/FejFoodies.png";
 import { NavLink } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 import { MdHistory, MdOutlineLightMode } from "react-icons/md";

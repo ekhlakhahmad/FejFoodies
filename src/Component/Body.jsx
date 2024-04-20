@@ -67,7 +67,7 @@ const Body = () => {
 		<Shimmer />
 	) : (
 		<div>
-			<div className="filterBtn sm:hidden">
+			<div className="filterBtn">
 				<button className="fiteredBtn " onClick={filteredList}>
 					Ratting 4.5+
 				</button>

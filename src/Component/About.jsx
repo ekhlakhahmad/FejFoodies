@@ -2,7 +2,7 @@ import React from 'react'
 import { FaWhatsappSquare } from 'react-icons/fa';
 import { FaLinkedin, FaSquareFacebook, FaSquareGithub, FaSquareInstagram, FaTelegram } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
-import fevicon from "../Assests/FEJ LOGO.png"
+import fevicon from "../Assests/FejFoodies.png"
 
 const About = () => {
   return (
