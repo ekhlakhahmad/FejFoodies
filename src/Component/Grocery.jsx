@@ -9,7 +9,7 @@ const Grocery = () => {
 				Vegatables Section
 			</h1>
 			<div className="flex justify-center flex-wrap gap-5">
-				<div className="flex flex-col p-4 border border-[#039a63] shadow-sm tra gap-2 rounded-lg">
+				<div className="flex flex-col items-center  p-4 border border-[#039a63] shadow-sm tra gap-2 rounded-lg">
 					<p className="flex justify-end">
 						<FaRegHeart />
 					</p>
