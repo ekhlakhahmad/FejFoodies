@@ -14,7 +14,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbk0AF8kfFhXL5gPuUmGyDFBhs6G4jg_ib-A&s"
 						alt=""
 					/>
@@ -35,7 +35,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-1920,q=80"
 						alt=""
 					/>
@@ -56,7 +56,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://www.bigbasket.com/media/uploads/p/m/10000067_23-fresho-capsicum-green.jpg?tr=w-1920,q=80"
 						alt=""
 					/>
@@ -77,7 +77,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/00/10/34/37/240_F_10343740_3W3izpz69cqamcyyKthcEoCCgP5r77i0.jpg"
 						alt=""
 					/>
@@ -98,7 +98,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/00/53/59/03/240_F_53590332_GktsdggabKrEv4a3URfSalFHofBoFOqL.jpg"
 						alt=""
 					/>
@@ -119,7 +119,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://www.apnikirana.com/thumb/thumb200X200/6e7590e740fa30e53cac0bdff738613c.jpg"
 						alt=""
 					/>
@@ -140,7 +140,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/00/32/09/57/240_F_32095781_CsyOETUW3ksonb7MxH4PzYfu2SPw6Lv8.jpg"
 						alt=""
 					/>
@@ -161,7 +161,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t3.ftcdn.net/jpg/00/41/30/10/240_F_41301053_AbLi3hlosbLajBo7lQdNyfGz9eusxY1x.jpg"
 						alt=""
 					/>
@@ -182,7 +182,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://www.apnikirana.com/thumb/thumb200X200/d5f755905c1f62962601ef350b1bcd86.jpg"
 						alt=""
 					/>
@@ -203,7 +203,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://www.apnikirana.com/thumb/thumb200X200/fe7c5c539c54c4fd1a2bdd8db5765b70.jpg"
 						alt=""
 					/>
@@ -229,7 +229,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t3.ftcdn.net/jpg/03/37/08/60/240_F_337086015_hxXQVScf64f0PLQKCo9BIpSYjzbybsw8.jpg"
 						alt=""
 					/>
@@ -250,7 +250,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t3.ftcdn.net/jpg/00/43/41/10/240_F_43411016_AUDM5vX4DYFZNdsfA8KIfOQpS2Qq4Q14.jpg"
 						alt=""
 					/>
@@ -271,7 +271,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/03/57/74/77/240_F_357747756_L2pGrjInTFCGUovZIvww1hejL2UWgQRs.jpg"
 						alt=""
 					/>
@@ -292,7 +292,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/05/19/69/27/240_F_519692779_aYELMhe7YLC6qy8hhTkZ2GJcvl0Sdkpk.jpg"
 						alt=""
 					/>
@@ -313,7 +313,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/02/53/36/81/240_F_253368189_kJT28OQHrx9FBpRWLmuFeD14fZGvsh2T.jpg"
 						alt=""
 					/>
@@ -334,7 +334,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/04/46/08/29/240_F_446082907_14kBnXEZihKcDg4FuYFVJyzizrrpfXQk.jpg"
 						alt=""
 					/>
@@ -355,7 +355,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t3.ftcdn.net/jpg/07/26/61/20/240_F_726612015_Nwu9o7td8i6Hxgaw8KdH8ZgNRfQI0UsH.jpg"
 						alt=""
 					/>
@@ -376,7 +376,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/07/24/70/45/240_F_724704563_waqVe9izllqiGPSx4mxJNdfGeL9rtSLt.jpg"
 						alt=""
 					/>
@@ -397,7 +397,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t4.ftcdn.net/jpg/03/60/62/03/240_F_360620364_PSNHD7dy69NyxqunUIc4eugpEPn2yOuE.jpg"
 						alt=""
 					/>
@@ -418,7 +418,7 @@ const Grocery = () => {
 						<FaRegHeart />
 					</p>
 					<img
-						className="w-60 h-[200px] object-cover"
+						className="w-[15rem] h-[200px] object-cover"
 						src="https://t3.ftcdn.net/jpg/01/37/70/00/240_F_137700093_M4rFblZNkuy9K55a8Mv0JVXOXeB5IAGV.jpg"
 						alt=""
 					/>
