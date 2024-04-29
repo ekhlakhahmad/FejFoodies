@@ -37,25 +37,25 @@ const Footer = () => {
 					<ul>
 						<p>ABOUT ZOMATO</p>
 						<li>
-							<a href="#">Who We Are</a>
+							<a className="hover:text-[#028152]" href="#">Who We Are</a>
 						</li>
 						<li>
-							<a href="#">Blog</a>
+							<a className="hover:text-[#028152]" href="#">Blog</a>
 						</li>
 						<li>
-							<a href="#">Work With Us</a>
+							<a className="hover:text-[#028152]" href="#">Work With Us</a>
 						</li>
 						<li>
-							<a href="#">Investor Relations</a>
+							<a className="hover:text-[#028152]" href="#">Investor Relations</a>
 						</li>
 						<li>
-							<a href="#">Report Fraud</a>
+							<a className="hover:text-[#028152]" href="#">Report Fraud</a>
 						</li>
 						<li>
-							<a href="#">Press Kit</a>
+							<a className="hover:text-[#028152]" href="#">Press Kit</a>
 						</li>
 						<li>
-							<a href="#">Contact Us</a>
+							<a className="hover:text-[#028152]" href="#">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -63,19 +63,19 @@ const Footer = () => {
 					<ul>
 						<p>ZOMAVERSE</p>
 						<li>
-							<a href="#">Zomato</a>
+							<a className="hover:text-[#028152]" href="#">Zomato</a>
 						</li>
 						<li>
-							<a href="#">Blinkit</a>
+							<a className="hover:text-[#028152]" href="#">Blinkit</a>
 						</li>
 						<li>
-							<a href="#">Feeding India</a>
+							<a className="hover:text-[#028152]" href="#">Feeding India</a>
 						</li>
 						<li>
-							<a href="#">Hyperpure</a>
+							<a className="hover:text-[#028152]" href="#">Hyperpure</a>
 						</li>
 						<li>
-							<a href="#">Zomaland</a>
+							<a className="hover:text-[#028152]" href="#">Zomaland</a>
 						</li>
 					</ul>
 				</div>
@@ -83,10 +83,10 @@ const Footer = () => {
 					<ul>
 						<p>FOR RESTAURANTS</p>
 						<li>
-							<a href="#">Parter With Us</a>
+							<a className="hover:text-[#028152]" href="#">Parter With Us</a>
 						</li>
 						<li>
-							<a href="#">Apps For You</a>
+							<a className="hover:text-[#028152]" href="#">Apps For You</a>
 						</li>
 					</ul>
 				</div>
@@ -94,16 +94,16 @@ const Footer = () => {
 					<ul>
 						<p>LEARN MORE</p>
 						<li>
-							<a href="#">Privacy</a>
+							<a className="hover:text-[#028152]" href="#">Privacy</a>
 						</li>
 						<li>
-							<a href="#">Security</a>
+							<a className="hover:text-[#028152]" href="#">Security</a>
 						</li>
 						<li>
-							<a href="#">Term</a>
+							<a className="hover:text-[#028152]" href="#">Term</a>
 						</li>
 						<li>
-							<a href="#">Sitemap</a>
+							<a className="hover:text-[#028152]" href="#">Sitemap</a>
 						</li>
 					</ul>
 				</div>
@@ -111,31 +111,31 @@ const Footer = () => {
 					<ul>
 						<p>SOCIAL LINKS</p>
 						<div className="socialLinks">
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<FaLinkedin />
 							</a>
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<FaInstagram />
 							</a>
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<FaFacebook />
 							</a>
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<FaGithub />
 							</a>
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<FaWhatsapp />
 							</a>
 						</div>
 						<div className="flex gap-6 mt-8">
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<img
 									src="https://w7.pngwing.com/pngs/30/346/png-transparent-app-store-iphone-android-apple-electronics-text-logo.png"
 									alt="appstore"
 									className="w-[100px] bg-white rounded-md"
 								/>
 							</a>
-							<a href="#">
+							<a className="hover:text-[#028152]" href="#">
 								<img
 									src="https://static.vecteezy.com/system/resources/previews/024/170/871/non_2x/badge-google-play-and-app-store-button-download-free-png.png"
 									alt="playstore"
