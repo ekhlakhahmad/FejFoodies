@@ -22,7 +22,7 @@ const Home = () => {
 					<button>
 						<Link
 							to="/login"
-							className="px-6 py-4 rounded-full bg-green-700 border bg-transparent text-white transition-all">
+							className="px-6 py-4 rounded-full bg-green-700 border text-white transition-all">
 							Get Started
 						</Link>
 					</button>
