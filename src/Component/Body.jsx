@@ -33,8 +33,11 @@ const Body = () => {
 		const newdata = listOfRestaurant.filter((e) => e.info.veg != true);
 		setNewSearchData(newdata);
 	};
-	const more = (e) => {
-		setMorefilter(e.target.value);
+	const handleFilter = (e) => {
+		const filter = listOfRestaurant.filter((resdata) =>
+			resdata.info.cuisines.includes(e.target.value)
+		);
+		setNewSearchData(filter);
 	};
 	const lowprice = () => {
 		const newdata = listOfRestaurant.filter((e) => {
@@ -66,7 +69,7 @@ const Body = () => {
 	return listOfRestaurant.length == 0 ? (
 		<Shimmer />
 	) : (
-		<div>
+		<div className="min-h-screen">
 			<div className="filterBtn">
 				<button className="fiteredBtn " onClick={filteredList}>
 					Ratting 4.5+
@@ -97,13 +100,13 @@ const Body = () => {
 				<div className="border-2 rounded-full border-[#039a63] transition-all 2s">
 					<select
 						className="py-2 px-2 rounded-full outline-none  hover:cursor-pointer"
-						value={morefilter}
-						onChange={(e) => setMorefilter(e.target.value)}>
-						<option value={"moreFilter"}>More Filter</option>
+						// value={morefilter}
+						onChange={handleFilter}>
+						<option value={""}>More Filter</option>
 						<option value={"Biryani"}>Biryani</option>
-						<option value={"Paneer"}>Paneer</option>
-						<option value={"Burger"}>Burger</option>
-						<option value={"Dhosa"}>Dhosa</option>
+						<option value={"Snacks"}>Snacks</option>
+						<option value={"Burgers"}>Burgers</option>
+						<option value={"Fast Food"}>Fast Food</option>
 						<option value={"Chhole"}>Chhole</option>
 						<option value={"Rajma"}>Rajma</option>
 					</select>
