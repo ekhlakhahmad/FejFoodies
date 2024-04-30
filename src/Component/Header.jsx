@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import LOGO from "../Assests/FejFoodies.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 import { MdHistory, MdOutlineLightMode } from "react-icons/md";
 import { MdNightlight } from "react-icons/md";
@@ -29,9 +29,9 @@ const Header = () => {
 
 	return (
 		<div className="header-sec">
-			<a href="#">
+			<Link to="/">
 				<img src={LOGO} alt="logo" />
-			</a>
+			</Link>
 			<nav>
 				<ul>
 					<li>

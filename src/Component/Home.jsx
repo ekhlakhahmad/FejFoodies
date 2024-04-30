@@ -21,7 +21,7 @@ const Home = () => {
 					</p>
 					<button>
 						<Link
-							to="/login"
+							to="/home"
 							className="px-6 py-4 rounded-full bg-green-700 border text-white transition-all">
 							Get Started
 						</Link>
